@@ -1,0 +1,833 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Screen Capture Solutions for Developers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary: #8b5cf6;
+            --accent: #ec4899;
+            --dark-bg: #2d3748;
+            --section-bg: #3c4757;
+            --card-bg: #4a5568;
+            --success: #10b981;
+            --text-light: #e2e8f0;
+            --text-lighter: #f7fafc;
+            --flagship: #ffd700;
+            --code-bg: #2d3748;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: var(--dark-bg);
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .logo {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-lighter);
+        }
+        
+        h2 {
+            font-size: 2rem;
+            margin: 0 0 1.5rem;
+            color: var(--text-lighter);
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            margin: 0 0 1rem;
+            color: var(--text-lighter);
+        }
+        
+        h4 {
+            font-size: 1.25rem;
+            margin: 0 0 0.5rem;
+            color: var(--text-lighter);
+        }
+        
+        p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+        
+        .tagline {
+            font-size: 1.4rem;
+            font-weight: 300;
+            max-width: 800px;
+            margin: 0 auto 1.5rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            margin: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+        
+        .btn-secondary {
+            background: var(--secondary);
+        }
+        
+        .btn-secondary:hover {
+            background: #7c3aed;
+        }
+        
+        .btn-accent {
+            background: var(--accent);
+        }
+        
+        .btn-accent:hover {
+            background: #db2777;
+        }
+        
+        .btn-large {
+            padding: 16px 32px;
+            font-size: 1.2rem;
+        }
+        
+        section {
+            padding: 3rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .section-content {
+            background: var(--section-bg);
+            border-radius: 10px;
+            padding: 2.5rem;
+            margin: 1rem 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .pricing-card {
+            background: var(--card-bg);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .pricing-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .pricing-header {
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        
+        .pricing-body {
+            padding: 1.5rem;
+        }
+        
+        .price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: white;
+            margin: 1rem 0;
+            text-align: center;
+        }
+        
+        .price-small {
+            font-size: 1.5rem;
+        }
+        
+        .savings {
+            background: var(--success);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-weight: 600;
+            display: inline-block;
+            margin: 10px 0;
+        }
+        
+        .features {
+            list-style-type: none;
+            margin: 1rem 0;
+        }
+        
+        .features li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .features li:before {
+            content: "✓";
+            color: var(--success);
+            position: absolute;
+            left: 0;
+        }
+        
+        .extensions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .extension-card {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .extension-card:hover {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            transform: translateY(-3px);
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-right: 5px;
+        }
+        
+        .badge-4k {
+            background: var(--accent);
+            color: white;
+        }
+        
+        .badge-pro {
+            background: var(--primary);
+            color: white;
+        }
+        
+        .badge-lite {
+            background: var(--success);
+            color: white;
+        }
+        
+        .badge-flagship {
+            background: var(--flagship);
+            color: black;
+            font-weight: bold;
+        }
+        
+        .text-center {
+            text-align: center;
+        }
+        
+        .mb-3 {
+            margin-bottom: 3rem;
+        }
+        
+        .mt-3 {
+            margin-top: 3rem;
+        }
+        
+        .highlight {
+            background: linear-gradient(120deg, #f0abfc 0%, #c4b5fd 100%);
+            padding: 0.2rem 0.5rem;
+            border-radius: 5px;
+            font-weight: 600;
+            color: #000;
+        }
+        
+        .user-count {
+            font-size: 0.9rem;
+            color: var(--success);
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        
+        .value-section {
+            background: var(--card-bg);
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .code-snippet {
+            background: var(--code-bg);
+            border-radius: 5px;
+            padding: 1.5rem;
+            font-family: 'Fira Code', monospace;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+            line-height: 1.5;
+            font-size: 0.95rem;
+            border-left: 4px solid var(--primary);
+        }
+        
+        .code-comment {
+            color: #a0aec0;
+            font-style: italic;
+        }
+        
+        .code-keyword {
+            color: #ff79c6;
+        }
+        
+        .code-function {
+            color: #50fa7b;
+        }
+        
+        .code-string {
+            color: #f1fa8c;
+        }
+        
+        .code-number {
+            color: #bd93f9;
+        }
+        
+        footer {
+            background: #1a202c;
+            color: white;
+            padding: 3rem 0;
+            margin-top: 4rem;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .footer-section {
+            flex: 1;
+            min-width: 300px;
+            margin-bottom: 2rem;
+        }
+        
+        .copyright {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .white-text {
+            color: white;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .info-card {
+            background: var(--card-bg);
+            border-radius: 10px;
+            padding: 1.5rem;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.7rem;
+            }
+            
+            .tagline {
+                font-size: 1.2rem;
+            }
+            
+            .pricing-grid, .extensions-grid, .info-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-content {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-video"></i>
+            </div>
+            <h1>Advanced Screen Capture Solutions for Developers</h1>
+            <p class="tagline">Professional-grade screen recording implementations for Chrome extensions with complete source code</p>
+            <a href="#solutions" class="btn btn-accent btn-large">Explore Implementation Solutions</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Educational Content Section -->
+        <section>
+            <div class="section-content">
+                <h2 class="text-center">Implementing High-Quality Screen Capture in Chrome Extensions</h2>
+                <p>Building a reliable screen capture solution for Chrome extensions presents unique challenges that many developers struggle with. The WebRTC API provides powerful capabilities, but implementing them effectively requires careful consideration of numerous technical details.</p>
+                
+                <div class="value-section">
+                    <h3>Common Technical Challenges in Screen Capture Implementation</h3>
+                    <ul class="features">
+                        <li>Managing audio-video synchronization across different browsers and platforms</li>
+                        <li>Handling performance optimization for 4K recording without excessive CPU usage</li>
+                        <li>Implementing efficient video encoding with support for multiple codecs (VP9, H.264)</li>
+                        <li>Creating a responsive, user-friendly interface for recording controls</li>
+                        <li>Ensuring compatibility with various screen, window, and application sources</li>
+                        <li>Managing memory efficiently during longer recording sessions</li>
+                        <li>Handling permissions and user prompts gracefully</li>
+                    </ul>
+                </div>
+                
+                <div class="value-section">
+                    <h3>WebRTC getDisplayMedia() Implementation Deep Dive</h3>
+                    <p>The core of any screen capture extension is the proper implementation of the WebRTC getDisplayMedia() API. Here's a more comprehensive example of how to implement this in a Chrome extension:</p>
+                    
+                    <div class="code-snippet">
+                        <span class="code-comment">// Request screen capture access with comprehensive options</span><br>
+                        <span class="code-keyword">async function</span> <span class="code-function">startCapture</span>() {<br>
+                        &nbsp;&nbsp;<span class="code-keyword">try</span> {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">const</span> stream = <span class="code-keyword">await</span> navigator.mediaDevices.getDisplayMedia({<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;video: {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cursor: <span class="code-string">"always"</span>, <span class="code-comment">// Can be "always", "never", or "motion"</span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;displaySurface: <span class="code-string">"monitor"</span>, <span class="code-comment">// "monitor", "window", "application", or "browser"</span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;logicalSurface: <span class="code-keyword">true</span>,<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resolution: { <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;max: { width: <span class="code-number">3840</span>, height: <span class="code-number">2160</span> }, <span class="code-comment">// 4K resolution</span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ideal: { width: <span class="code-number">1920</span>, height: <span class="code-number">1080</span> } <span class="code-comment">// Fallback to 1080p</span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;frameRate: { <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ideal: <span class="code-number">60</span>, <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;max: <span class="code-number">120</span> <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;audio: {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echoCancellation: <span class="code-keyword">true</span>,<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;noiseSuppression: <span class="code-keyword">true</span>,<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sampleRate: <span class="code-number">48000</span>,<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;channelCount: <span class="code-number">2</span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;systemAudio: <span class="code-string">"include"</span> <span class="code-comment">// Capture system audio (requires appropriate permissions)</span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;});<br>
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-comment">// Set up recording with MediaRecorder API</span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">const</span> options = {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mimeType: <span class="code-string">'video/webm;codecs=vp9,opus'</span>, <span class="code-comment">// Prefer VP9 for quality</span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;videoBitsPerSecond: <span class="code-number">8000000</span> <span class="code-comment">// 8 Mbps for high-quality recording</span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;};<br>
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">const</span> mediaRecorder = <span class="code-keyword">new</span> MediaRecorder(stream, options);<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-function">handleRecorder</span>(mediaRecorder);<br>
+                        &nbsp;&nbsp;} <span class="code-keyword">catch</span> (err) {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;console.<span class="code-function">error</span>(<span class="code-string">"Error starting capture: "</span> + err);<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-comment">// Implement fallback strategies here</span><br>
+                        &nbsp;&nbsp;}<br>
+                        }
+                    </div>
+                    
+                    <p>This implementation shows several important considerations:</p>
+                    <ul class="features">
+                        <li>Comprehensive configuration options for different recording scenarios</li>
+                        <li>Fallback resolutions and frame rates for compatibility</li>
+                        <li>Audio configuration for optimal recording quality</li>
+                        <li>Proper error handling with potential fallback strategies</li>
+                        <li>MediaRecorder configuration for optimal output quality</li>
+                    </ul>
+                </div>
+                
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h4>Performance Optimization Techniques</h4>
+                        <p>Screen recording can be resource-intensive. Our implementations include:</p>
+                        <ul class="features">
+                            <li>Efficient frame processing with minimal memory footprint</li>
+                            <li>Adaptive bitrate adjustment based on system capabilities</li>
+                            <li>Hardware acceleration utilization when available</li>
+                            <li>Intelligent memory management for longer recordings</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h4>Browser Compatibility Solutions</h4>
+                        <p>We've solved compatibility issues across:</p>
+                        <ul class="features">
+                            <li>Different Chrome versions (including MV3 migration)</li>
+                            <li>Various operating systems (Windows, macOS, Linux)</li>
+                            <li>Multiple display configurations and scaling factors</li>
+                            <li>Different hardware capabilities</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="value-section">
+                    <h3>Advanced Features Implementation</h3>
+                    <p>Beyond basic screen capture, professional implementations require additional features:</p>
+                    
+                    <div class="code-snippet">
+                        <span class="code-comment">// Example of advanced features implementation</span><br>
+                        <span class="code-keyword">const</span> advancedFeatures = {<br>
+                        &nbsp;&nbsp;annotationTools: <span class="code-keyword">true</span>, <span class="code-comment">// Real-time drawing on screen</span><br>
+                        &nbsp;&nbsp;cursorHighlight: <span class="code-keyword">true</span>, <span class="code-comment">// Visual emphasis on cursor movements</span><br>
+                        &nbsp;&nbsp;keyboardShortcuts: <span class="code-keyword">true</span>, <span class="code-comment">// Customizable hotkeys</span><br>
+                        &nbsp;&nbsp;webcamOverlay: <span class="code-keyword">true</span>, <span class="code-comment">// Picture-in-picture webcam support</span><br>
+                        &nbsp;&nbsp;autoTrim: <span class="code-keyword">true</span>, <span class="code-comment">// Automatic removal of silent periods</span><br>
+                        &nbsp;&nbsp;multiSourceAudio: <span class="code-keyword">true</span> <span class="code-comment">// Mix system and microphone audio</span><br>
+                        };
+                    </div>
+                    
+                    <p>Each of these features presents its own implementation challenges that we've solved in our source code.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solutions Section -->
+        <section id="solutions">
+            <div class="section-content">
+                <h2 class="text-center">Complete Implementation Solutions</h2>
+                <p>After months of development, testing, and refinement across various environments, we've created comprehensive screen capture solutions that handle all these challenges. Our code includes workarounds for browser-specific issues, performance optimizations, and extensive documentation.</p>
+                
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3 class="white-text">4K Ultra HD Series</h3>
+                            <p class="white-text">Premium recording solutions</p>
+                        </div>
+                        <div class="pricing-body">
+                            <div class="price">$399 <span class="price-small">each</span></div>
+                            <div class="savings">Save up to $496 with bundle</div>
+                            <ul class="features">
+                                <li>Screen Capture Recorder 4K</li>
+                                <li>Capture Master 4K</li>
+                                <li>Screen Flow 4K</li>
+                                <li>Vision Capture 4K</li>
+                                <li>Game Capture 4K</li>
+                            </ul>
+                            <div class="text-center">
+                                <a href="https://ko-fi.com/s/b30ebaf714" class="btn">Complete 4K Suite: $1,499</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3 class="white-text">Pro Series</h3>
+                            <p class="white-text">Professional recording solutions</p>
+                        </div>
+                        <div class="pricing-body">
+                            <div class="price">$299 <span class="price-small">each</span></div>
+                            <div class="savings">Save up to $197 with bundle</div>
+                            <ul class="features">
+                                <li>DevCapture Pro</li>
+                                <li>EduCapture Pro</li>
+                                <li>Meeting Capture Pro</li>
+                                <li>Game Vision Pro</li>
+                            </ul>
+                            <div class="text-center">
+                                <a href="https://ko-fi.com/s/486515d3e4" class="btn">Complete Pro Suite: $999</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3 class="white-text">Lite Series</h3>
+                            <p class="white-text">Essential recording solutions</p>
+                        </div>
+                        <div class="pricing-body">
+                            <div class="price">$199 <span class="price-small">each</span></div>
+                            <div class="savings">Save up to $97 with bundle</div>
+                            <ul class="features">
+                                <li>BizCapture Lite</li>
+                                <li>Learn Capture Lite</li>
+                                <li>Screen Snap Lite</li>
+                                <li>Game Snap Lite</li>
+                            </ul>
+                            <div class="text-center">
+                                <a href="https://ko-fi.com/s/e011ac71dc" class="btn">Complete Lite Suite: $699</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Individual Extensions Section -->
+        <section>
+            <div class="section-content">
+                <h2 class="text-center">Individual Extension Solutions</h2>
+                <p class="text-center">Each extension is designed for specific use cases with optimized functionality</p>
+                
+                <h3 class="text-center">4K Ultra HD Series</h3>
+                <div class="extensions-grid">
+                    <div class="extension-card">
+                        <span class="badge badge-4k">4K</span>
+                        <span class="badge badge-flagship">FLAGSHIP</span>
+                        <h4>Screen Capture Recorder 4K</h4>
+                        <p>Premium 4K recording with advanced editing</p>
+                        <div class="user-count">2,100+ Active Users</div>
+                        <div class="price">$399</div>
+                        <a href="https://ko-fi.com/s/37deb99c0b" class="btn btn-secondary">Purchase Source Code</a>
+                    </div>
+                    
+                    <div class="extension-card">
+                        <span class="badge badge-4k">4K</span>
+                        <h4>Capture Master 4K</h4>
+                        <p>All-in-one professional capture solution</p>
+                        <div class="price">$399</div>
+                        <a href="https://ko-fi.com/s/200188f3c8" class="btn btn-secondary">Purchase Source Code</a>
+                    </div>
+                    
+                    <div class="extension-card">
+                        <span class="badge badge-4k">4K</span>
+                        <h4>Screen Flow 4K</h4>
+                        <p>Smooth workflow optimized recording</p>
+                        <div class="price">$399</div>
+                        <a href="https://ko-fi.com/s/b171c231b0" class="btn btn-secondary">Purchase Source Code</a>
+                    </div>
+                    
+                    <div class="extension-card">
+                        <span class="badge badge-4k">4K</span>
+                        <h4>Vision Capture 4K</h4>
+                        <p>AI-enhanced visual capture technology</p>
+                        <div class="price">$399</div>
+                        <a href="https://ko-fi.com/s/9aaf4e121a" class="btn btn-secondary">Purchase Source Code</a>
+                    </div>
+                    
+                    <div class="extension-card">
+                        <span class="badge badge-4k">4K</span>
+                        <h4>Game Capture 4K</h4>
+                        <p>Universal game recording with performance optimization</p>
+                        <div class="price">$399</div>
+                        <a href="https://ko-fi.com/s/90f17d1bef" class="btn btn-secondary">Purchase Source Code</a>
+                    </div>
+                </div>
+                
+                <h3 class="text-center">Pro Series</h3>
+                <div class="extensions-grid">
+                    <div class="extension-card">
+                        <span class="badge badge-pro">PRO</span>
+                        <h4>DevCapture Pro</h4>
+                        <p>Developer-focused screen recording</p>
+                        <div class="price">$299</div>
+                        <a href="https://ko-fi.com/s/77c5624a39" class="btn btn-secondary">Purchase Source Code</a>
+                    </div>
+                    
+                    <div class="extension-card">
+                        <span class="badge badge-pro">PRO</span>
+                        <h4>EduCapture Pro</h4>
+                        <p>Education and tutorial recording optimized</p>
+                        <div class="price">$299</div>
+                        <a href="https://ko-fi.com/s/edb7999663" class="btn btn-secondary">Purchase Source Code</a>
+                    </div>
+                    
+                    <div class="extension-card">
+                        <span class="badge badge-pro">PRO</span>
+                        <h4>Meeting Capture Pro</h4>
+                        <p>Professional meeting and presentation capture</p>
+                        <div class="price">$299</div>
+                        <a href="https://ko-fi.com/s/16a6e4e086" class="btn btn-secondary">Purchase Source Code</a>
+                    </div>
+                    
+                    <div class="extension-card">
+                        <span class="badge badge-pro">PRO</span>
+                        <h4>Game Vision Pro</h4>
+                        <p>Advanced gameplay recording and analysis</p>
+                        <div class="price">$299</div>
+                        <a href="https://ko-fi.com/s/35278f1f9b" class="btn btn-secondary">Purchase Source Code</a>
+                    </div>
+                </div>
+                
+                <h3 class="text-center">Lite Series</h3>
+                <div class="extensions-grid">
+                    <div class="extension-card">
+                        <span class="badge badge-lite">LITE</span>
+                        <h4>BizCapture Lite</h4>
+                        <p>Business and productivity recording</p>
+                        <div class="price">$199</div>
+                        <a href="https://ko-fi.com/s/1933e098b9" class="btn btn-secondary">Purchase Source Code</a>
+                    </div>
+                    
+                    <div class="extension-card">
+                        <span class="badge badge-lite">LITE</span>
+                        <h4>Learn Capture Lite</h4>
+                        <p>Educational content creation</p>
+                        <div class="price">$199</div>
+                        <a href="https://ko-fi.com/s/1346ab328f" class="btn btn-secondary">Purchase Source Code</a>
+                    </div>
+                    
+                    <div class="extension-card">
+                        <span class="badge badge-lite">LITE</span>
+                        <h4>Screen Snap Lite</h4>
+                        <p>Basic screen capture made easy</p>
+                        <div class="price">$199</div>
+                        <a href="https://ko-fi.com/s/cdfbdf9483" class="btn btn-secondary">Purchase Source Code</a>
+                    </div>
+                    
+                    <div class="extension-card">
+                        <span class="badge badge-lite">LITE</span>
+                        <h4>Game Snap Lite</h4>
+                        <p>Lightweight game recording</p>
+                        <div class="price">$199</div>
+                        <a href="https://ko-fi.com/s/ec2fd67581" class="btn btn-secondary">Purchase Source Code</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Universal Bundle Section -->
+        <section>
+            <div class="section-content">
+                <h2 class="text-center">Universal Bundle - Complete Solution</h2>
+                <p class="text-center">Get access to all 13 extensions at an incredible discount</p>
+                <div class="price white-text text-center">$2,999</div>
+                <p class="text-center" style="font-weight: bold;">Save $1,188 compared to individual purchases</p>
+                <div class="text-center">
+                    <a href="https://ko-fi.com/s/6c64b2ee55" class="btn btn-accent btn-large">Get Universal Bundle</a>
+                </div>
+                <p class="text-center white-text mt-2">Regular Price: <s>$4,187</s></p>
+            </div>
+        </section>
+
+        <!-- Technical Specifications Section -->
+        <section>
+            <div class="section-content">
+                <h2 class="text-center">Technical Specifications</h2>
+                
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3 class="white-text">Platform & Languages</h3>
+                        </div>
+                        <div class="pricing-body">
+                            <ul class="features">
+                                <li>Chrome Extension (MV3)</li>
+                                <li>HTML5, CSS3, JavaScript</li>
+                                <li>WebRTC, Canvas, MediaRecorder APIs</li>
+                                <li>Modern ES6+ JavaScript features</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3 class="white-text">Storage & Performance</h3>
+                        </div>
+                        <div class="pricing-body">
+                            <ul class="features">
+                                <li>chrome.storage.local, IndexedDB</li>
+                                <li>Low CPU usage optimization</li>
+                                <li>Hardware acceleration support</li>
+                                <li>Efficient memory management</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3 class="white-text">Video & Audio</h3>
+                        </div>
+                        <div class="pricing-body">
+                            <ul class="features">
+                                <li>VP9, H.264 encoding support</li>
+                                <li>AAC, Opus codec support</li>
+                                <li>Multi-source audio capture</li>
+                                <li>4K resolution at 60fps</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section>
+            <div class="section-content">
+                <h2 class="text-center">Ready to Implement Professional Screen Capture?</h2>
+                <p class="text-center">Save development time and leverage our battle-tested solutions for your projects</p>
+                <div class="text-center">
+                    <a href="#solutions" class="btn btn-accent btn-large">Explore Implementation Options</a>
+                </div>
+                <p class="text-center mt-3">Questions? Email us at <span class="highlight">kofiklubteam@gmail.com</span></p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Professional Screen Capture Solutions</h3>
+                    <p>Enterprise-grade source code for developers and businesses.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Kerwin Peters (Eyedolise)</p>
+                    <p>Email: kofiklubteam@gmail.com</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>License</h3>
+                    <p>Universal Source Code License</p>
+      
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>© 2024 Kerwin Peters (Eyedolise). All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
