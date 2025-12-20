@@ -169,4 +169,6 @@ Check out our other enterprise-grade source code products:
 ---
 
 © 2025 Kerwin Peters (Eyedolise). All rights reserved.
-Universal Source Code License. This is a one-time purchase for complete, working source code. No recurring fees.
+Universal Source Code License. 
+
+This is a one-time purchase for complete, working source code. No recurring fees.
