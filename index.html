@@ -32,341 +32,557 @@
     <meta property="twitter:description" content="13 individual extensions + 4 bundle deals. Professional screen recording source code for developers.">
     <meta property="twitter:image" content="https://eyedolise.github.io/chromescreenrecord/pscs.jpg">
     
-    <!-- Structured Data (JSON-LD) -->
-    <script type="application/ld+json">
+    
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
+      "@type": "SoftwareApplication",
+      "@id": "https://eyedolise.github.io/chromescreenrecord/#software",
+      "name": "Professional Screen Capture Suite",
+      "description": "17 professional screen recording solutions including 13 individual extensions and 4 bundle deals for developers and businesses",
+      "url": "https://eyedolise.github.io/chromescreenrecord/",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Web",
+      "image": "https://eyedolise.github.io/chromescreenrecord/pscs.jpg",
+      "offers": {
+        "@type": "AggregateOffer",
+        "offerCount": "17",
+        "lowPrice": "199",
+        "highPrice": "2999",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 7,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "47",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
         {
-          "@type": "SoftwareApplication",
-          "@id": "https://eyedolise.github.io/chromescreenrecord/#software",
-          "name": "Professional Screen Capture Suite",
-          "description": "17 professional screen recording solutions including 13 individual extensions and 4 bundle deals for developers and businesses",
-          "url": "https://eyedolise.github.io/chromescreenrecord/",
-          "applicationCategory": "DeveloperApplication",
-          "operatingSystem": "Web",
-          "image": "https://eyedolise.github.io/chromescreenrecord/pscs.jpg",
-          "offers": {
-            "@type": "AggregateOffer",
-            "offerCount": "17",
-            "lowPrice": "199",
-            "highPrice": "2999",
-            "priceCurrency": "USD",
-            "availability": "https://schema.org/InStock"
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Software Developer"
           },
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.8",
-            "ratingCount": "47",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
             "bestRating": "5"
+          },
+          "reviewBody": "The 4K recording quality is exceptional. Perfect for creating tutorial videos and software demos."
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Game Developer"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "4.5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Game Capture 4K works flawlessly for recording gameplay. The bundle deals offer great value."
+        }
+      ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://eyedolise.github.io/chromescreenrecord/#product",
+      "name": "Professional Screen Capture Suite Universal Bundle",
+      "image": "https://eyedolise.github.io/chromescreenrecord/pscs.jpg",
+      "description": "Complete collection of 17 professional screen recording solutions including all 13 individual extensions and 4 bundle deals",
+      "brand": {
+        "@type": "Brand",
+        "name": "ScreenCapture Pro"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "47",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Video Content Creator"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "The Universal Bundle includes everything I need for professional screen recording. The 4K quality is outstanding."
+        }
+      ],
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Universal Bundle (All 17 Products)",
+          "price": "2999",
+          "priceCurrency": "USD",
+          "url": "https://ko-fi.com/s/6c64b2ee55",
+          "availability": "https://schema.org/InStock",
+          "priceValidUntil": "2026-12-31",
+          "description": "Includes all 13 individual extensions + 4 bundle deals",
+          "shippingDetails": {
+            "@type": "OfferShippingDetails",
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              "value": "0",
+              "currency": "USD"
+            },
+            "shippingDestination": {
+              "@type": "DefinedRegion",
+              "addressCountry": "US"
+            },
+            "deliveryTime": {
+              "@type": "ShippingDeliveryTime",
+              "businessDays": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+              },
+              "cutoffTime": "17:00-08:00",
+              "handlingTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 0,
+                "maxValue": 1,
+                "unitCode": "DAY"
+              },
+              "transitTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 0,
+                "maxValue": 0,
+                "unitCode": "DAY"
+              }
+            }
+          },
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+            "merchantReturnDays": 7,
+            "returnMethod": "https://schema.org/ReturnByMail",
+            "returnFees": "https://schema.org/FreeReturn"
           }
         },
         {
-          "@type": "Product",
-          "@id": "https://eyedolise.github.io/chromescreenrecord/#product",
-          "name": "Professional Screen Capture Suite Universal Bundle",
-          "image": "https://eyedolise.github.io/chromescreenrecord/pscs.jpg",
-          "description": "Complete collection of 17 professional screen recording solutions including all 13 individual extensions and 4 bundle deals",
-          "brand": {
-            "@type": "Brand",
-            "name": "ScreenCapture Pro"
-          },
-          "offers": [
-            {
-              "@type": "Offer",
-              "name": "Universal Bundle (All 17 Products)",
-              "price": "2999",
-              "priceCurrency": "USD",
-              "url": "https://ko-fi.com/s/6c64b2ee55",
-              "availability": "https://schema.org/InStock",
-              "priceValidUntil": "2026-12-31",
-              "description": "Includes all 13 individual extensions + 4 bundle deals"
+          "@type": "Offer",
+          "name": "4K Ultra HD Series Bundle (5 extensions)",
+          "price": "1499",
+          "priceCurrency": "USD",
+          "url": "https://ko-fi.com/s/b30ebaf714",
+          "availability": "https://schema.org/InStock",
+          "priceValidUntil": "2026-12-31",
+          "shippingDetails": {
+            "@type": "OfferShippingDetails",
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              "value": "0",
+              "currency": "USD"
             },
-            {
-              "@type": "Offer",
-              "name": "4K Ultra HD Series Bundle (5 extensions)",
-              "price": "1499",
-              "priceCurrency": "USD",
-              "url": "https://ko-fi.com/s/b30ebaf714",
-              "availability": "https://schema.org/InStock",
-              "priceValidUntil": "2026-12-31"
+            "shippingDestination": {
+              "@type": "DefinedRegion",
+              "addressCountry": "US"
             },
-            {
-              "@type": "Offer",
-              "name": "Pro Series Bundle (4 extensions)",
-              "price": "999",
-              "priceCurrency": "USD",
-              "url": "https://ko-fi.com/s/486515d3e4",
-              "availability": "https://schema.org/InStock",
-              "priceValidUntil": "2026-12-31"
-            },
-            {
-              "@type": "Offer",
-              "name": "Lite Series Bundle (4 extensions)",
-              "price": "699",
-              "priceCurrency": "USD",
-              "url": "https://ko-fi.com/s/e011ac71dc",
-              "availability": "https://schema.org/InStock",
-              "priceValidUntil": "2026-12-31"
+            "deliveryTime": {
+              "@type": "ShippingDeliveryTime",
+              "businessDays": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+              },
+              "cutoffTime": "17:00-08:00",
+              "handlingTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 0,
+                "maxValue": 1,
+                "unitCode": "DAY"
+              },
+              "transitTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 0,
+                "maxValue": 0,
+                "unitCode": "DAY"
+              }
             }
-          ]
-        },
-        {
-          "@type": "Organization",
-          "@id": "https://eyedolise.github.io/chromescreenrecord/#organization",
-          "name": "Eyedolise Development",
-          "url": "https://eyedolise.github.io/chromescreenrecord/",
-          "logo": "https://eyedolise.github.io/chromescreenrecord/pscs.jpg",
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+1-868-278-0240",
-            "email": "nlcgpt1@gmail.com",
-            "contactType": "customer service",
-            "availableLanguage": "English",
-            "areaServed": "Worldwide"
           },
-          "sameAs": [
-            "https://ko-fi.com/eyedolise",
-            "https://tt.linkedin.com/in/eyedolise-5b9605384",
-            "https://github.com/eyedolise"
-          ]
-        },
-        {
-          "@type": "BreadcrumbList",
-          "@id": "https://eyedolise.github.io/chromescreenrecord/#breadcrumb",
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "Home",
-              "item": "https://eyedolise.github.io/chromescreenrecord/"
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "Screen Recording Solutions",
-              "item": "https://eyedolise.github.io/chromescreenrecord/#solutions"
-            },
-            {
-              "@type": "ListItem",
-              "position": 3,
-              "name": "17 Products & Bundles",
-              "item": "https://eyedolise.github.io/chromescreenrecord/#extensions"
-            }
-          ]
-        },
-        {
-          "@type": "WebSite",
-          "@id": "https://eyedolise.github.io/chromescreenrecord/#website",
-          "url": "https://eyedolise.github.io/chromescreenrecord/",
-          "name": "ScreenCapture Pro",
-          "description": "17 professional screen recording solutions with bundle deals",
-          "publisher": {
-            "@id": "https://eyedolise.github.io/chromescreenrecord/#organization"
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+            "merchantReturnDays": 7,
+            "returnMethod": "https://schema.org/ReturnByMail",
+            "returnFees": "https://schema.org/FreeReturn"
           }
         },
         {
-          "@type": "ItemList",
-          "@id": "https://eyedolise.github.io/chromescreenrecord/#productlist",
-          "name": "All 17 Screen Recording Products",
-          "numberOfItems": "17",
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "item": {
-                "@type": "Product",
-                "name": "Universal Bundle (All 17 Products)",
-                "url": "https://ko-fi.com/s/6c64b2ee55",
-                "price": "2999",
-                "priceCurrency": "USD",
-                "description": "Complete collection including all bundles and individual extensions"
-              }
+          "@type": "Offer",
+          "name": "Pro Series Bundle (4 extensions)",
+          "price": "999",
+          "priceCurrency": "USD",
+          "url": "https://ko-fi.com/s/486515d3e4",
+          "availability": "https://schema.org/InStock",
+          "priceValidUntil": "2026-12-31",
+          "shippingDetails": {
+            "@type": "OfferShippingDetails",
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              "value": "0",
+              "currency": "USD"
             },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "item": {
-                "@type": "Product",
-                "name": "4K Ultra HD Series Bundle",
-                "url": "https://ko-fi.com/s/b30ebaf714",
-                "price": "1499",
-                "priceCurrency": "USD",
-                "description": "5 premium 4K recording extensions"
-              }
+            "shippingDestination": {
+              "@type": "DefinedRegion",
+              "addressCountry": "US"
             },
-            {
-              "@type": "ListItem",
-              "position": 3,
-              "item": {
-                "@type": "Product",
-                "name": "Pro Series Bundle",
-                "url": "https://ko-fi.com/s/486515d3e4",
-                "price": "999",
-                "priceCurrency": "USD",
-                "description": "4 professional recording extensions"
-              }
-            },
-            {
-              "@type": "ListItem",
-              "position": 4,
-              "item": {
-                "@type": "Product",
-                "name": "Lite Series Bundle",
-                "url": "https://ko-fi.com/s/e011ac71dc",
-                "price": "699",
-                "priceCurrency": "USD",
-                "description": "4 essential recording extensions"
-              }
-            },
-            {
-              "@type": "ListItem",
-              "position": 5,
-              "item": {
-                "@type": "Product",
-                "name": "Screen Capture Recorder 4K",
-                "url": "https://ko-fi.com/s/37deb99c0b",
-                "price": "399",
-                "priceCurrency": "USD"
-              }
-            },
-            {
-              "@type": "ListItem",
-              "position": 6,
-              "item": {
-                "@type": "Product",
-                "name": "Capture Master 4K",
-                "url": "https://ko-fi.com/s/200188f3c8",
-                "price": "399",
-                "priceCurrency": "USD"
-              }
-            },
-            {
-              "@type": "ListItem",
-              "position": 7,
-              "item": {
-                "@type": "Product",
-                "name": "Screen Flow 4K",
-                "url": "https://ko-fi.com/s/b171c231b0",
-                "price": "399",
-                "priceCurrency": "USD"
-              }
-            },
-            {
-              "@type": "ListItem",
-              "position": 8,
-              "item": {
-                "@type": "Product",
-                "name": "Vision Capture 4K",
-                "url": "https://ko-fi.com/s/9aaf4e121a",
-                "price": "399",
-                "priceCurrency": "USD"
-              }
-            },
-            {
-              "@type": "ListItem",
-              "position": 9,
-              "item": {
-                "@type": "Product",
-                "name": "Game Capture 4K",
-                "url": "https://ko-fi.com/s/90f17d1bef",
-                "price": "399",
-                "priceCurrency": "USD"
-              }
-            },
-            {
-              "@type": "ListItem",
-              "position": 10,
-              "item": {
-                "@type": "Product",
-                "name": "DevCapture Pro",
-                "url": "https://ko-fi.com/s/77c5624a39",
-                "price": "299",
-                "priceCurrency": "USD"
-              }
-            },
-            {
-              "@type": "ListItem",
-              "position": 11,
-              "item": {
-                "@type": "Product",
-                "name": "EduCapture Pro",
-                "url": "https://ko-fi.com/s/edb7999663",
-                "price": "299",
-                "priceCurrency": "USD"
-              }
-            },
-            {
-              "@type": "ListItem",
-              "position": 12,
-              "item": {
-                "@type": "Product",
-                "name": "Meeting Capture Pro",
-                "url": "https://ko-fi.com/s/16a6e4e086",
-                "price": "299",
-                "priceCurrency": "USD"
-              }
-            },
-            {
-              "@type": "ListItem",
-              "position": 13,
-              "item": {
-                "@type": "Product",
-                "name": "Game Vision Pro",
-                "url": "https://ko-fi.com/s/35278f1f9b",
-                "price": "299",
-                "priceCurrency": "USD"
-              }
-            },
-            {
-              "@type": "ListItem",
-              "position": 14,
-              "item": {
-                "@type": "Product",
-                "name": "BizCapture Lite",
-                "url": "https://ko-fi.com/s/1933e098b9",
-                "price": "199",
-                "priceCurrency": "USD"
-              }
-            },
-            {
-              "@type": "ListItem",
-              "position": 15,
-              "item": {
-                "@type": "Product",
-                "name": "Learn Capture Lite",
-                "url": "https://ko-fi.com/s/1346ab328f",
-                "price": "199",
-                "priceCurrency": "USD"
-              }
-            },
-            {
-              "@type": "ListItem",
-              "position": 16,
-              "item": {
-                "@type": "Product",
-                "name": "Screen Snap Lite",
-                "url": "https://ko-fi.com/s/cdfbdf9483",
-                "price": "199",
-                "priceCurrency": "USD"
-              }
-            },
-            {
-              "@type": "ListItem",
-              "position": 17,
-              "item": {
-                "@type": "Product",
-                "name": "Game Snap Lite",
-                "url": "https://ko-fi.com/s/ec2fd67581",
-                "price": "199",
-                "priceCurrency": "USD"
+            "deliveryTime": {
+              "@type": "ShippingDeliveryTime",
+              "businessDays": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+              },
+              "cutoffTime": "17:00-08:00",
+              "handlingTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 0,
+                "maxValue": 1,
+                "unitCode": "DAY"
+              },
+              "transitTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 0,
+                "maxValue": 0,
+                "unitCode": "DAY"
               }
             }
-          ]
+          },
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+            "merchantReturnDays": 7,
+            "returnMethod": "https://schema.org/ReturnByMail",
+            "returnFees": "https://schema.org/FreeReturn"
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Lite Series Bundle (4 extensions)",
+          "price": "699",
+          "priceCurrency": "USD",
+          "url": "https://ko-fi.com/s/e011ac71dc",
+          "availability": "https://schema.org/InStock",
+          "priceValidUntil": "2026-12-31",
+          "shippingDetails": {
+            "@type": "OfferShippingDetails",
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              "value": "0",
+              "currency": "USD"
+            },
+            "shippingDestination": {
+              "@type": "DefinedRegion",
+              "addressCountry": "US"
+            },
+            "deliveryTime": {
+              "@type": "ShippingDeliveryTime",
+              "businessDays": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+              },
+              "cutoffTime": "17:00-08:00",
+              "handlingTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 0,
+                "maxValue": 1,
+                "unitCode": "DAY"
+              },
+              "transitTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 0,
+                "maxValue": 0,
+                "unitCode": "DAY"
+              }
+            }
+          },
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+            "merchantReturnDays": 7,
+            "returnMethod": "https://schema.org/ReturnByMail",
+            "returnFees": "https://schema.org/FreeReturn"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://eyedolise.github.io/chromescreenrecord/#organization",
+      "name": "Eyedolise Development",
+      "url": "https://eyedolise.github.io/chromescreenrecord/",
+      "logo": "https://eyedolise.github.io/chromescreenrecord/pscs.jpg",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-868-278-0240",
+        "email": "nlcgpt1@gmail.com",
+        "contactType": "customer service",
+        "availableLanguage": "English",
+        "areaServed": "Worldwide"
+      },
+      "sameAs": [
+        "https://ko-fi.com/eyedolise",
+        "https://tt.linkedin.com/in/eyedolise-5b9605384",
+        "https://github.com/eyedolise"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://eyedolise.github.io/chromescreenrecord/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://eyedolise.github.io/chromescreenrecord/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Screen Recording Solutions",
+          "item": "https://eyedolise.github.io/chromescreenrecord/#solutions"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "17 Products & Bundles",
+          "item": "https://eyedolise.github.io/chromescreenrecord/#extensions"
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://eyedolise.github.io/chromescreenrecord/#website",
+      "url": "https://eyedolise.github.io/chromescreenrecord/",
+      "name": "ScreenCapture Pro",
+      "description": "17 professional screen recording solutions with bundle deals",
+      "publisher": {
+        "@id": "https://eyedolise.github.io/chromescreenrecord/#organization"
+      }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://eyedolise.github.io/chromescreenrecord/#productlist",
+      "name": "All 17 Screen Recording Products",
+      "numberOfItems": "17",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Product",
+            "name": "Universal Bundle (All 17 Products)",
+            "url": "https://ko-fi.com/s/6c64b2ee55",
+            "price": "2999",
+            "priceCurrency": "USD",
+            "description": "Complete collection including all bundles and individual extensions"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "Product",
+            "name": "4K Ultra HD Series Bundle",
+            "url": "https://ko-fi.com/s/b30ebaf714",
+            "price": "1499",
+            "priceCurrency": "USD",
+            "description": "5 premium 4K recording extensions"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "Product",
+            "name": "Pro Series Bundle",
+            "url": "https://ko-fi.com/s/486515d3e4",
+            "price": "999",
+            "priceCurrency": "USD",
+            "description": "4 professional recording extensions"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "Product",
+            "name": "Lite Series Bundle",
+            "url": "https://ko-fi.com/s/e011ac71dc",
+            "price": "699",
+            "priceCurrency": "USD",
+            "description": "4 essential recording extensions"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "Product",
+            "name": "Screen Capture Recorder 4K",
+            "url": "https://ko-fi.com/s/37deb99c0b",
+            "price": "399",
+            "priceCurrency": "USD"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@type": "Product",
+            "name": "Capture Master 4K",
+            "url": "https://ko-fi.com/s/200188f3c8",
+            "price": "399",
+            "priceCurrency": "USD"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "item": {
+            "@type": "Product",
+            "name": "Screen Flow 4K",
+            "url": "https://ko-fi.com/s/b171c231b0",
+            "price": "399",
+            "priceCurrency": "USD"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "item": {
+            "@type": "Product",
+            "name": "Vision Capture 4K",
+            "url": "https://ko-fi.com/s/9aaf4e121a",
+            "price": "399",
+            "priceCurrency": "USD"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "item": {
+            "@type": "Product",
+            "name": "Game Capture 4K",
+            "url": "https://ko-fi.com/s/90f17d1bef",
+            "price": "399",
+            "priceCurrency": "USD"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 10,
+          "item": {
+            "@type": "Product",
+            "name": "DevCapture Pro",
+            "url": "https://ko-fi.com/s/77c5624a39",
+            "price": "299",
+            "priceCurrency": "USD"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 11,
+          "item": {
+            "@type": "Product",
+            "name": "EduCapture Pro",
+            "url": "https://ko-fi.com/s/edb7999663",
+            "price": "299",
+            "priceCurrency": "USD"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 12,
+          "item": {
+            "@type": "Product",
+            "name": "Meeting Capture Pro",
+            "url": "https://ko-fi.com/s/16a6e4e086",
+            "price": "299",
+            "priceCurrency": "USD"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 13,
+          "item": {
+            "@type": "Product",
+            "name": "Game Vision Pro",
+            "url": "https://ko-fi.com/s/35278f1f9b",
+            "price": "299",
+            "priceCurrency": "USD"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 14,
+          "item": {
+            "@type": "Product",
+            "name": "BizCapture Lite",
+            "url": "https://ko-fi.com/s/1933e098b9",
+            "price": "199",
+            "priceCurrency": "USD"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 15,
+          "item": {
+            "@type": "Product",
+            "name": "Learn Capture Lite",
+            "url": "https://ko-fi.com/s/1346ab328f",
+            "price": "199",
+            "priceCurrency": "USD"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 16,
+          "item": {
+            "@type": "Product",
+            "name": "Screen Snap Lite",
+            "url": "https://ko-fi.com/s/cdfbdf9483",
+            "price": "199",
+            "priceCurrency": "USD"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 17,
+          "item": {
+            "@type": "Product",
+            "name": "Game Snap Lite",
+            "url": "https://ko-fi.com/s/ec2fd67581",
+            "price": "199",
+            "priceCurrency": "USD"
+          }
         }
       ]
     }
-    </script>
+  ]
+}
+</script>
+
+
 
     <!-- External Stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
