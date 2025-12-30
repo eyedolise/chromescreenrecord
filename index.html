@@ -587,6 +587,7 @@
     <!-- External Stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+
     <style>
         :root {
             --primary: #2563eb;
@@ -867,13 +868,6 @@
             color: #000;
         }
         
-        .user-count {
-            font-size: 0.9rem;
-            color: var(--success);
-            font-weight: bold;
-            margin-top: 10px;
-        }
-        
         .value-section {
             background: var(--card-bg);
             border-radius: 10px;
@@ -991,38 +985,6 @@
             display: block;
         }
         
-        .social-proof-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1rem;
-            margin: 2rem 0;
-        }
-        
-        .social-proof-item {
-            background: var(--card-bg);
-            padding: 1rem;
-            border-radius: 8px;
-            text-align: center;
-        }
-        
-        .social-proof-item i {
-            font-size: 2rem;
-            color: var(--success);
-            margin-bottom: 0.5rem;
-        }
-        
-        .number-stat {
-            font-size: 2rem;
-            font-weight: bold;
-            color: var(--accent);
-            display: block;
-        }
-        
-        .stat-label {
-            font-size: 0.9rem;
-            opacity: 0.8;
-        }
-        
         @media (max-width: 768px) {
             h1 {
                 font-size: 2rem;
@@ -1036,7 +998,7 @@
                 font-size: 1.2rem;
             }
             
-            .pricing-grid, .extensions-grid, .info-grid, .social-proof-grid {
+            .pricing-grid, .extensions-grid, .info-grid {
                 grid-template-columns: 1fr;
             }
             
@@ -1048,13 +1010,12 @@
 </head>
 <body>
     <header>
-        
         <div class="container">
             <div class="logo">
                 <i class="fas fa-video"></i>
             </div>
-            <h1>ScreenCapture Pro: Enterprise-Grade Recording Solutions</h1>
-            <p class="tagline">Stop wasting development time. Launch professional screen recording features in days, not months.</p>
+            <h1>ScreenCapture Pro: Screen Recording Solutions</h1>
+            <p class="tagline">Professional screen recording source code for developers and businesses.</p>
             <a href="#solutions" class="btn btn-accent btn-large">See Implementation Solutions</a>
         </div>
     </header>
@@ -1063,61 +1024,22 @@
         <!-- Business Benefits Section -->
         <section>
             <div class="section-content">
-                <h2 class="text-center">Why Businesses Choose ScreenCapture Pro</h2>
-                <p class="text-center">We've solved the complex technical challenges so you can focus on growing your business.</p>
+                <h2 class="text-center">Benefits for Developers</h2>
+                <p class="text-center">Implement screen recording features with complete source code.</p>
                 
-                <div class="social-proof-grid">
-                    <div class="social-proof-item">
-                        <i class="fas fa-clock"></i>
-                        <span class="number-stat">50+</span>
-                        <span class="stat-label">Hours Saved Per Project</span>
-                    </div>
-                    <div class="social-proof-item">
-                        <i class="fas fa-users"></i>
-                        <span class="number-stat">100+</span>
-                        <span class="stat-label">Businesses Using Our Code</span>
-                    </div>
-                    <div class="social-proof-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span class="number-stat">13</span>
-                        <span class="stat-label">Pre-Built Solutions</span>
-                    </div>
-                    <div class="social-proof-item">
-                        <i class="fas fa-dollar-sign"></i>
-                        <span class="number-stat">$15K+</span>
-                        <span class="stat-label">Development Value</span>
-                    </div>
+                <div class="benefit-card">
+                    <h3><i class="fas fa-rocket" style="color: var(--accent); margin-right: 10px;"></i> Reduce Development Time</h3>
+                    <p>Implement screen recording features with tested and documented source code instead of building from scratch.</p>
                 </div>
                 
                 <div class="benefit-card">
-                    <h3><i class="fas fa-rocket" style="color: var(--accent); margin-right: 10px;"></i> Accelerate Your Time to Market</h3>
-                    <p>What typically takes 3-6 months to develop in-house can be implemented in days. Our battle-tested solutions eliminate the trial-and-error phase, reducing your development timeline by 80%.</p>
+                    <h3><i class="fas fa-shield-alt" style="color: var(--success); margin-right: 10px;"></i> Production-Ready Code</h3>
+                    <p>Source code designed for implementation in real projects with support for various recording scenarios.</p>
                 </div>
                 
                 <div class="benefit-card">
-                    <h3><i class="fas fa-shield-alt" style="color: var(--success); margin-right: 10px;"></i> Enterprise-Ready & Scalable</h3>
-                    <p>Built for high-performance environments with support for 4K recording, multiple codecs, and efficient memory management. Handle thousands of users without performance degradation.</p>
-                </div>
-                
-                <div class="benefit-card">
-                    <h3><i class="fas fa-cogs" style="color: var(--primary); margin-right: 10px;"></i> Zero Maintenance Headaches</h3>
-                    <p>We've already solved browser compatibility issues, Chrome MV3 migration, and performance optimization. No need to hire specialized WebRTC developers or worry about constant updates.</p>
-                </div>
-                
-                <!-- Testimonials -->
-                <div class="mt-3">
-                    <h3 class="text-center">What Our Business Customers Say</h3>
-                    
-                    <div class="testimonial">
-                        <p>"We were struggling with screen recording implementation for our SaaS platform. ScreenCapture Pro saved us 4 months of development time and $25,000 in engineering costs."</p>
-                        <span class="testimonial-author">- Tech Lead, E-Learning Platform</span>
-                    </div>
-                    
-                    <div class="testimonial">
-                        <p>"The 4K recording solution integrated seamlessly with our video conferencing tool. Our customers love the professional quality, and we avoided hiring a specialized WebRTC team."</p>
-                        <span class="testimonial-author">- Product Manager, Communication SaaS</span>
-                    </div>
-       
+                    <h3><i class="fas fa-cogs" style="color: var(--primary); margin-right: 10px;"></i> Browser Compatibility</h3>
+                    <p>Code that handles browser-specific implementations and WebRTC APIs.</p>
                 </div>
             </div>
         </section>
@@ -1125,13 +1047,8 @@
         <!-- Solutions Section -->
         <section id="solutions">
             <div class="section-content">
-                <h2 class="text-center">Complete Implementation Solutions</h2>
-                <p>After months of development, testing, and refinement across various environments, we've created comprehensive screen capture solutions that handle all these challenges. Our code includes workarounds for browser-specific issues, performance optimizations, and extensive documentation.</p>
-                
-                <!-- Social Proof for 4K Series -->
-                <div class="social-proof-item" style="background: var(--dark-bg); margin: 1rem 0; padding: 1rem;">
-                    <p><i class="fas fa-crown" style="color: var(--flagship);"></i> <strong>4K Series Social Proof:</strong> Used by 45+ video production companies and 30+ game studios for professional content creation.</p>
-                </div>
+                <h2 class="text-center">Implementation Solutions</h2>
+                <p>Screen recording extensions with complete source code for developers.</p>
                 
                 <div class="pricing-grid">
                     <div class="pricing-card">
@@ -1141,7 +1058,7 @@
                         </div>
                         <div class="pricing-body">
                             <div class="price">$399 <span class="price-small">each</span></div>
-                            <div class="savings">Save up to $496 with bundle</div>
+                            <div class="savings">Save with bundle</div>
                             <ul class="features">
                                 <li>Screen Capture Recorder 4K</li>
                                 <li>Capture Master 4K</li>
@@ -1154,7 +1071,6 @@
                             </div>
                         </div>
                     </div>
-      
                     
                     <div class="pricing-card">
                         <div class="pricing-header">
@@ -1163,7 +1079,7 @@
                         </div>
                         <div class="pricing-body">
                             <div class="price">$299 <span class="price-small">each</span></div>
-                            <div class="savings">Save up to $197 with bundle</div>
+                            <div class="savings">Save with bundle</div>
                             <ul class="features">
                                 <li>DevCapture Pro</li>
                                 <li>EduCapture Pro</li>
@@ -1175,7 +1091,6 @@
                             </div>
                         </div>
                     </div>
-       
                     
                     <div class="pricing-card">
                         <div class="pricing-header">
@@ -1184,7 +1099,7 @@
                         </div>
                         <div class="pricing-body">
                             <div class="price">$199 <span class="price-small">each</span></div>
-                            <div class="savings">Save up to $97 with bundle</div>
+                            <div class="savings">Save with bundle</div>
                             <ul class="features">
                                 <li>BizCapture Lite</li>
                                 <li>Learn Capture Lite</li>
@@ -1204,7 +1119,7 @@
         <section>
             <div class="section-content">
                 <h2 class="text-center">Individual Extension Solutions</h2>
-                <p class="text-center">Each extension is designed for specific use cases with optimized functionality</p>
+                <p class="text-center">Each extension is designed for specific use cases</p>
                 
                 <h3 class="text-center">4K Ultra HD Series</h3>
                 <div class="extensions-grid">
@@ -1212,8 +1127,7 @@
                         <span class="badge badge-4k">4K</span>
                         <span class="badge badge-flagship">FLAGSHIP</span>
                         <h4>Screen Capture Recorder 4K</h4>
-                        <p>Premium 4K recording with advanced editing</p>
-                        <div class="user-count">Used by 25+ video agencies</div>
+                        <p>Premium 4K recording with editing features</p>
                         <div class="price">$399</div>
                         <a href="https://ko-fi.com/s/37deb99c0b" target="_blank" class="btn btn-secondary">Purchase Source Code</a>
                     </div>
@@ -1221,8 +1135,7 @@
                     <div class="extension-card">
                         <span class="badge badge-4k">4K</span>
                         <h4>Capture Master 4K</h4>
-                        <p>All-in-one professional capture solution</p>
-                        <div class="user-count">35+ enterprise deployments</div>
+                        <p>Professional capture solution</p>
                         <div class="price">$399</div>
                         <a href="https://ko-fi.com/s/200188f3c8" target="_blank" class="btn btn-secondary">Purchase Source Code</a>
                     </div>
@@ -1230,8 +1143,7 @@
                     <div class="extension-card">
                         <span class="badge badge-4k">4K</span>
                         <h4>Screen Flow 4K</h4>
-                        <p>Smooth workflow optimized recording</p>
-                        <div class="user-count">20+ productivity apps</div>
+                        <p>Workflow optimized recording</p>
                         <div class="price">$399</div>
                         <a href="https://ko-fi.com/s/b171c231b0" target="_blank" class="btn btn-secondary">Purchase Source Code</a>
                     </div>
@@ -1239,8 +1151,7 @@
                     <div class="extension-card">
                         <span class="badge badge-4k">4K</span>
                         <h4>Vision Capture 4K</h4>
-                        <p>AI-enhanced visual capture technology</p>
-                        <div class="user-count">15+ AI platform integrations</div>
+                        <p>Visual capture technology</p>
                         <div class="price">$399</div>
                         <a href="https://ko-fi.com/s/9aaf4e121a" target="_blank" class="btn btn-secondary">Purchase Source Code</a>
                     </div>
@@ -1248,8 +1159,7 @@
                     <div class="extension-card">
                         <span class="badge badge-4k">4K</span>
                         <h4>Game Capture 4K</h4>
-                        <p>Universal game recording with performance optimization</p>
-                        <div class="user-count">30+ gaming companies</div>
+                        <p>Game recording with performance optimization</p>
                         <div class="price">$399</div>
                         <a href="https://ko-fi.com/s/90f17d1bef" target="_blank" class="btn btn-secondary">Purchase Source Code</a>
                     </div>
@@ -1261,7 +1171,6 @@
                         <span class="badge badge-pro">PRO</span>
                         <h4>DevCapture Pro</h4>
                         <p>Developer-focused screen recording</p>
-                        <div class="user-count">40+ dev tool integrations</div>
                         <div class="price">$299</div>
                         <a href="https://ko-fi.com/s/77c5624a39" target="_blank" class="btn btn-secondary">Purchase Source Code</a>
                     </div>
@@ -1269,8 +1178,7 @@
                     <div class="extension-card">
                         <span class="badge badge-pro">PRO</span>
                         <h4>EduCapture Pro</h4>
-                        <p>Education and tutorial recording optimized</p>
-                        <div class="user-count">25+ e-learning platforms</div>
+                        <p>Education and tutorial recording</p>
                         <div class="price">$299</div>
                         <a href="https://ko-fi.com/s/edb7999663" target="_blank" class="btn btn-secondary">Purchase Source Code</a>
                     </div>
@@ -1278,8 +1186,7 @@
                     <div class="extension-card">
                         <span class="badge badge-pro">PRO</span>
                         <h4>Meeting Capture Pro</h4>
-                        <p>Professional meeting and presentation capture</p>
-                        <div class="user-count">30+ communication tools</div>
+                        <p>Meeting and presentation capture</p>
                         <div class="price">$299</div>
                         <a href="https://ko-fi.com/s/16a6e4e086" target="_blank" class="btn btn-secondary">Purchase Source Code</a>
                     </div>
@@ -1287,8 +1194,7 @@
                     <div class="extension-card">
                         <span class="badge badge-pro">PRO</span>
                         <h4>Game Vision Pro</h4>
-                        <p>Advanced gameplay recording and analysis</p>
-                        <div class="user-count">20+ esports organizations</div>
+                        <p>Gameplay recording and analysis</p>
                         <div class="price">$299</div>
                         <a href="https://ko-fi.com/s/35278f1f9b" target="_blank" class="btn btn-secondary">Purchase Source Code</a>
                     </div>
@@ -1300,7 +1206,6 @@
                         <span class="badge badge-lite">LITE</span>
                         <h4>BizCapture Lite</h4>
                         <p>Business and productivity recording</p>
-                        <div class="user-count">60+ small businesses</div>
                         <div class="price">$199</div>
                         <a href="https://ko-fi.com/s/1933e098b9" target="_blank" class="btn btn-secondary">Purchase Source Code</a>
                     </div>
@@ -1309,7 +1214,6 @@
                         <span class="badge badge-lite">LITE</span>
                         <h4>Learn Capture Lite</h4>
                         <p>Educational content creation</p>
-                        <div class="user-count">45+ educational creators</div>
                         <div class="price">$199</div>
                         <a href="https://ko-fi.com/s/1346ab328f" target="_blank" class="btn btn-secondary">Purchase Source Code</a>
                     </div>
@@ -1317,8 +1221,7 @@
                     <div class="extension-card">
                         <span class="badge badge-lite">LITE</span>
                         <h4>Screen Snap Lite</h4>
-                        <p>Basic screen capture made easy</p>
-                        <div class="user-count">80+ startup deployments</div>
+                        <p>Basic screen capture</p>
                         <div class="price">$199</div>
                         <a href="https://ko-fi.com/s/cdfbdf9483" target="_blank" class="btn btn-secondary">Purchase Source Code</a>
                     </div>
@@ -1327,7 +1230,6 @@
                         <span class="badge badge-lite">LITE</span>
                         <h4>Game Snap Lite</h4>
                         <p>Lightweight game recording</p>
-                        <div class="user-count">35+ indie game studios</div>
                         <div class="price">$199</div>
                         <a href="https://ko-fi.com/s/ec2fd67581" target="_blank" class="btn btn-secondary">Purchase Source Code</a>
                     </div>
@@ -1339,29 +1241,23 @@
         <section>
             <div class="section-content">
                 <h2 class="text-center">Universal Bundle - Complete Solution</h2>
-                <p class="text-center">Get access to all 13 extensions at an incredible discount</p>
-                <div class="social-proof-item" style="background: var(--dark-bg); margin: 1rem auto; padding: 1rem; max-width: 600px;">
-                    <p><i class="fas fa-star" style="color: var(--flagship);"></i> <strong>Universal Bundle Social Proof:</strong> Purchased by 15+ digital agencies and 8+ software houses to service multiple clients.</p>
-                </div>
+                <p class="text-center">Get access to all extensions at a bundled price</p>
                 <div class="price white-text text-center">$2,999</div>
-                <p class="text-center" style="font-weight: bold;">Save $1,188 compared to individual purchases</p>
+                <p class="text-center" style="font-weight: bold;">Save compared to individual purchases</p>
                 <div class="text-center">
                     <a href="https://ko-fi.com/s/6c64b2ee55" target="_blank" class="btn btn-accent btn-large">Get Universal Bundle</a>
                 </div>
-                <p class="text-center white-text mt-2">Regular Price: <s>$4,187</s></p>
             </div>
         </section>
-
 
         <!-- Call to Action Section -->
         <section>
             <div class="section-content">
-                <h2 class="text-center">Ready to Accelerate Your Development?</h2>
-                <p class="text-center">Stop reinventing the wheel. Implement professional screen recording in days, not months.</p>
+                <h2 class="text-center">Ready to Implement Screen Recording?</h2>
+                <p class="text-center">Get complete source code for professional screen recording features.</p>
                 <div class="text-center">
                     <a href="#solutions" class="btn btn-accent btn-large">Explore Implementation Options</a>
                 </div>
-           
             </div>
         </section>
     </div>
@@ -1371,17 +1267,14 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>Professional Screen Capture Solutions</h3>
-                    <p>Enterprise-grade source code for developers and businesses.</p>
-                
+                    <p>Source code for developers and businesses.</p>
+                </div>
                 
                 <div class="footer-section">
                     <h3>Contact</h3>
-            
                     <p>Business: <a href="mailto:nlcgpt1@gmail.com" style="color: #fff; text-decoration: none;">nlcgpt1@gmail.com</a></p>
                     <p>Phone: (868) 278-0240</p>
                     
-
-
                     <div class="linkedin-link" style="margin-top: 10px;">
                         <a href="https://tt.linkedin.com/in/kerwin-peters-5b9605384" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: #0077b5;">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -1390,8 +1283,6 @@
                             <span>Connect on LinkedIn</span>
                         </a>
                     </div>
-
-
                 </div>
                 
                 <div class="footer-section">
@@ -1405,9 +1296,14 @@
 
             <!-- SaasHub -->
             <a href='https://www.saashub.com/eyedolise-screen-capture-for-developers?utm_source=badge&utm_campaign=badge&utm_content=eyedolise-screen-capture-for-developers&badge_variant=neutral&badge_kind=approved' target='_blank'><img src="https://cdn-b.saashub.com/img/badges/approved-neutral.png?v=1" alt="Eyedolise Screen Capture for Developers badge" style="max-width: 150px;"/></a>
-
         </div>
     </footer>
+
+
+         <div class="copyright">
+                <p>© 2026 All rights reserved.</p>
+            </div>
+
 
     <!-- Default Statcounter code -->
     <script type="text/javascript">
@@ -1423,8 +1319,7 @@
     referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
     <!-- End of Statcounter Code -->
 
-    <div class="copyright">
-        <p>© 2025 All rights reserved.</p>
-    </div>
+
 </body>
 </html>
+                    
